@@ -1,0 +1,968 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+VISIONFRIEND RULES
+01-Universal Styles
+02-Sizing
+03-Header Section
+04-Jumbotron Section
+05-Banner Section
+06-Article Section
+07-Gallery Section
+08-Sidebar Section
+09-Table Section
+10-Add-To-Cart Section
+11-CTA Section
+12-Footer Section
+13-Holy Grail Section
+
+*/
+
+/* Universal Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+/* Sizing */
+
+.image-container {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0rem 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Header Section */
+
+.nav {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bolder;
+	letter-spacing: -4px;
+	background: white;
+	position: fixed;
+	top: 0px;
+	width: 100vw;
+	z-index: 100;
+
+}
+
+ul.nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav a {
+	color: grey;
+}
+
+.active a {
+	color: red;
+}
+
+.header {
+	display: flex;
+}
+
+.container.myself {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	transform: rotate(-.5deg);
+
+
+}
+
+.container.logo {
+    display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	align-items: flex-start;
+
+}
+
+.logo {
+	 text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 5rem;
+	text-transform: uppercase;
+	line-height: .7;
+	font-style: italic;
+	font-weight: bolder;
+	letter-spacing: -5px;
+	
+}
+
+ul.logo {
+	background: black;
+	padding: 1rem;
+}
+
+
+.container.contact {
+	 display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact {
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1rem;
+	text-transform: uppercase;
+	line-height: .7;
+	font-style: italic;
+	font-weight: bolder;
+	letter-spacing: -1px;
+	margin: 0 2rem 0 0;
+
+}
+
+ul.contact {
+	background: green;
+	padding: 2rem;
+	color: white;
+	border-radius: 5%;
+	filter: drop-shadow(5px 5px 5px grey);
+}
+
+#vision {
+	color: white;
+}
+
+#friend {
+	color: red;
+}
+
+#chris-friend {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	line-height: .7;
+	font-style: oblique;
+	font-weight: bolder;
+	letter-spacing: -1px;
+	padding: 1rem;
+	
+}
+/* Jumbotron Section */
+
+
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url("Images/Old-Earth_Web-BG_2022-12-29_v01cf.jpg");
+	background-size: cover;
+}
+
+.jumbotron a {
+	color: white;
+}
+
+.jumbotron li {
+	color: white;
+}
+
+.menu-item {
+	padding: 4rem 0;
+}
+
+.menu-description-one {
+	font-size: 5rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -3px;
+	line-height: 4rem;
+	
+}
+
+.menu-description-two 	{
+	text-align: center;
+	font-size: 1rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+
+
+/* Banner Section */
+
+
+
+
+.banner {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+}
+
+.banner.container {
+	width: 80%;
+	
+}
+
+.banner h1 {
+	font-size: 10rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -15px;
+	font-weight: bolder;
+	color: red;
+	
+}
+
+.news-article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.title-box {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+.info-box {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+}
+
+.description-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.description-box.one {
+	font-size: 2rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-style: oblique;
+}
+
+.description-box.two {
+	font-size: 2.5rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: lighter;
+	font-style: oblique;
+	line-height: 1rem;
+}
+.title {
+	font-size: 2rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bolder;
+	color: red;
+}
+
+.store-book-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background: white;
+}
+
+.store-book-title.one {
+	font-size: 4rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -8px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	
+}
+
+.store-book-title.three {
+	font-size: 3rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -8px;
+	font-weight: bolder;
+	font-style: oblique;
+	
+}
+
+.store-book-title.two, .store-book-title.four {
+	font-size: 2rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -5px;
+	font-weight: light;
+	font-style: oblique;
+	line-height: 1rem;
+	margin: 0 1rem;
+	color: grey;
+}
+
+
+.note .image-container {
+	max-width: 1000px;
+	margin: 3rem auto;
+}
+
+.main-image .image-container {
+	transform: rotate(1.3deg);
+}
+
+.portrait .image-container {
+	width: 60%;
+	margin: 3rem auto;
+	max-width: 500px;
+	transform: rotate(1.3deg);
+}
+
+/* Article Section */
+
+.article-headline {
+	background: red;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bolder;
+}
+
+
+#burn-title-one {
+	font-size: 6rem;
+	line-height: 4.5rem;
+	}
+#burn-title-two {
+	font-size: 1.5rem;
+	}
+#burn-title-three {
+	font-size: 1rem;
+	}
+
+img.card {
+	max-width: 600px;
+}
+
+.article-main {
+	background: black;
+	text-align: center;
+	
+}
+
+.article-description {
+	font-size: 2rem;
+	padding: 4rem 2rem 15rem 2rem;
+	background: black;
+	color: white;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.store-book-cover .image-container {
+	width: 100%;
+	min-width: 600px;
+	height: auto;
+	overflow: hidden;
+}
+
+.store-book-cover .image-container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.thumb .image-container {
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+    margin: 0 auto;
+}
+
+.thumb .image-container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.thumb-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.store-book-blurb p {
+	margin: 1rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.note {
+
+	
+}
+
+.note p {
+	font-size: 3rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: lighter;
+	color: grey;
+	background: black;
+	margin: 3rem;
+	padding: 4rem;
+	text-align: justify;
+	text-justify: auto;
+}
+
+.note h1 {
+	font-size: 6rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 5px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: white;
+	text-transform: uppercase;
+	line-height: 0.7;
+	text-align: center;
+	margin: 4rem;
+	background: black;
+
+}
+
+.note h2 {
+	font-size: 6rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -8px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	text-transform: uppercase;
+	line-height: 0.75;
+	text-align: right;
+	margin: 1rem;
+	background: black;
+	transform: rotate(-1deg);
+	
+
+}
+
+.note h3 {
+	font-size: 4rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -4px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	text-transform: uppercase;
+	background: black;
+	transform: rotate(-1deg);
+	
+}
+
+.note h4 {
+	font-size: 2rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -4px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: black;
+	text-transform: uppercase;
+	background: darkgrey;
+	text-align: center;
+
+	
+	
+}
+
+/* Gallery Section */
+
+.video {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.gallery {
+	background: black;
+	margin: .5rem;
+
+}
+
+.gallery h1 {
+	font-size: 4rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 5px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	text-transform: uppercase;
+	line-height: 0.7;
+	text-align: center;
+	margin: 1rem;
+	background: white;
+
+}
+
+.gallery-note {
+	background: black;
+	color: grey;
+	font-size: 1.5rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: lighter;
+	margin: 1rem;
+	padding: 1rem;
+	text-align: justify;
+	text-justify: auto;
+}
+
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.gallery-row {
+	display: flex;
+	flex-direction: column;
+	
+}
+.gallery img {
+	width: 60vw;
+	min-width: 400px;
+	height: auto;
+}
+
+.gallery-caption-one {
+	font-size: 6rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -8px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	text-transform: uppercase;
+	line-height: 0.75;
+	text-align: center;
+	margin: 1rem;
+	background: black;
+	transform: rotate(-1deg);
+	
+	
+}
+
+.gallery-caption-two {
+	color: grey;
+	font-size: 4rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	letter-spacing: -1px;
+	font-weight: lighter;
+	font-style: oblique;
+	color: grey;
+	line-height: 0.75;
+	text-align: center;
+	margin: 1rem;
+	
+	
+	
+}
+
+.gallery-caption-three {
+	color: grey;
+	text-align: center;
+}
+
+.gallery-caption-four {
+	color: grey;
+	text-align: center;
+}
+
+.gallery-caption-five {
+	color: lightgrey;
+	text-align: center;
+}
+
+
+/* Sidebar Section */
+
+.sidebar {
+
+	margin: 2rem 5rem;
+    background-color: hsla(200, 0%, 80%, .6);
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	border: 1px white solid;
+	transform: rotate(.5deg);
+}
+
+.sidebar li {
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: black;
+	line-height: 1;
+	font-weight: bolder;
+	letter-spacing: .05rem;
+	text-transform: capitalize;
+	border-bottom: 1px dotted white;
+	padding: 1rem 0rem;
+	transform: rotate(-1deg);
+
+
+}
+
+.sidebar h3 {
+	font-size: 3rem;
+	color: red;
+	background: black;
+	margin: 1rem;
+	text-transform: uppercase;
+	line-height: .9;
+	text-align: right;
+	transform: rotate(1deg);
+}
+
+.sidebar h4 {
+	font-size: 2rem;
+	color: red;
+	background: black;
+	margin: 1rem;
+	text-transform: uppercase;
+	line-height: .9;
+	text-align: left;
+}
+
+.sidebar-understated {
+	background: black;
+	color: grey;
+	font-size: 2rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: lighter;
+	text-align: center;
+	text-justify: auto;
+}
+
+.sidebar-strong{
+		font-size: 2rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -4px;
+	font-weight: bolder;
+	font-style: oblique;
+	color: red;
+	text-transform: uppercase;
+	background: black;
+	transform: rotate(1deg);
+}
+
+/* Table Section */
+
+.cv {
+	
+}
+
+.cv-table {
+	border: white 2px solid;
+}
+
+.table-header {
+	color: white;
+	font-size: 1.5rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-style: italic;
+	background: black;
+	border: grey 5px solid;
+	text-align: center;
+	padding: 0.5rem 0;
+}
+
+.table-data {
+	background: black;
+	
+	
+}
+
+.table-data.one {
+	color: red;
+	font-size: 1.2rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 1px;
+	font-weight: bolder;
+	font-style: oblique;
+	text-transform: uppercase;
+	background: black;
+	border: grey 5px solid;
+	text-align: center;
+	padding: 0.5rem 0;
+	
+} 
+
+.table-data.two {
+	color: white;
+	font-size: 1.5rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-style: normal;
+	background: black;
+	border: grey 5px solid;
+	text-align: center;
+	padding: 0.5rem 0;
+	
+} 
+
+.table-data.three, .table-data.four, .table-data.five, .table-data.six {
+	font-size: 0.8rem;
+	color: grey;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	padding: 0.5rem 0.5rem;
+	border: white 1px dotted;
+}
+
+
+/* Add-To-Cart Section */
+
+.addtocart-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.addtocart {
+	display: flex;
+	flex-direction: row;
+	margin: 2rem;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.addto {
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	border-radius: 50%;
+	height: 6rem;
+	width: 6rem;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	
+}
+
+.addtocart-add {
+	font-size: 2rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -.3rem;
+	
+}
+
+.addtocart-tocart span {
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+}
+
+.addtocart-price {
+	
+	font-size: 3rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: -.3rem;
+	line-height: 1;
+	
+}
+
+.addtocart-priceshipping {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.addtocart-shipping {
+	font-size: .7rem;
+	text-align: center;
+	line-height: .8;
+}
+
+
+
+/* CTA Section */
+
+
+
+.cta.banner {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 5rem auto;
+}
+
+.cta-line-one {
+	font-size: 3rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -4px;
+	font-weight: bolder;
+	color: green;
+}
+
+.cta-line-two {
+    font-size: 10rem;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	letter-spacing: -15px;
+	font-weight: bolder;
+	color: green;
+}
+
+/* Footer Section */
+
+
+/* Holy Grail Section */
+
+.holygrail {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin-top: 60px;
+}
+
+.holygrail-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	
+}
+
+.middle {
+	padding: 4rem 0rem;
+	background-image: url("Images/VF-islamic_2022-05-10_v01cf.png"), url("Images/VF_BackGround-Triangle_2022-01.png");
+	background-size: auto, cover;
+	background-color: pink;
+}
+
+.left {
+	padding: 4rem 0rem;
+	background-image: url("Images/VF-islamic_2022-05-10_v01cf.png"), url("Images/VF_BackGround-Triangle_2022-01.png");
+	background-size: auto, cover;
+	background-color: pink;
+}
+
+
+.right {
+	padding: 2rem 0rem;
+	background-image: url("Images/VF-islamic_2022-05-10_v01cf.png"), url("Images/VF_BackGround-Triangle_2022-01.png");
+	background-size: auto, cover;
+	background-color: pink;
+}
+
+.middle {
+	flex: 1;
+}
+
+.left, .right {
+	flex: 0 0 12em;
+}
+
+.left {
+	order: 0;
+}
+
+@media only screen and (min-width: 1500px) {
+	.holygrail-body {
+		flex-direction: row;
+		flex: 1;
+	}
+	.middle {
+		flex: 1;
+	}
+	.left, .right {
+		flex: 0 0 12em;
+	}
+	.left {
+	order: -1;
+			
+}
+	.big {
+		flex: 1;
+	}
+	
+	.gallery-row {
+	flex-direction: row;
+	}
+	
+	.gallery-caption-one {
+		font-size: 3rem;
+	}
+	
+	.gallery-caption-two {
+		font-size: 2rem;
+		
+	}
+	
+	
+}
+
+@media only screen and (max-width: 1000px) {
+	.table-data.five, .table-data.six, .table-header.five, .table-header.six {
+		display: none;
+	}
+}
+
+
